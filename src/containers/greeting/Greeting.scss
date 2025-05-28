@@ -11,6 +11,7 @@
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 2rem;
+  margin-bottom: 30px;
 }
 
 .greeting-main {
@@ -91,6 +92,13 @@
 }
 
 /* Media Query */
+@media (min-width: 1430px) {
+  .greeting-image-div > img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 90px;
+  }
+}
 @media (max-width: 1380px) {
   .greeting-text {
     font-size: 50px;

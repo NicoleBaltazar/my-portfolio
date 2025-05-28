@@ -1,22 +1,30 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import {useNavigate} from "react-router-dom"; // import useNavigate
+import ProjectModal from "./ProjectModal";
+
+// inside your component:
 
 export default function StartupProject() {
-  function openUrlInNewTab(url) {
-    if (!url) {
-      return;
-    }
-    var win = window.open(url, "_blank");
-    win.focus();
+  // const navigate = useNavigate();
+  const {isDark} = useContext(StyleContext);
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  function openModal(project) {
+    setSelectedProject(project);
   }
 
-  const {isDark} = useContext(StyleContext);
+  function closeModal() {
+    setSelectedProject(null);
+  }
+
   if (!bigProjects.display) {
     return null;
   }
+
   return (
     <Fade bottom duration={1000} distance="20px">
       <div className="main" id="projects">
@@ -65,7 +73,18 @@ export default function StartupProject() {
                     >
                       {project.projectDesc}
                     </p>
-                    {project.footerLink ? (
+                    <div className="project-card-footer">
+                      <span
+                        className={
+                          isDark ? "dark-mode project-tag" : "project-tag"
+                        }
+                        onClick={() => openModal(project)}
+                      >
+                        More Details
+                      </span>
+                    </div>
+
+                    {/* {project.footerLink ? (
                       <div className="project-card-footer">
                         {project.footerLink.map((link, i) => {
                           return (
@@ -75,19 +94,28 @@ export default function StartupProject() {
                                 isDark ? "dark-mode project-tag" : "project-tag"
                               }
                               onClick={() => openUrlInNewTab(link.url)}
+                              
                             >
                               {link.name}
                             </span>
                           );
                         })}
                       </div>
-                    ) : null}
+                    ) : null} */}
                   </div>
                 </div>
               );
             })}
           </div>
         </div>
+        {/* Modal */}
+        {selectedProject && (
+          <ProjectModal
+            project={selectedProject}
+            onClose={closeModal}
+            isDark={isDark}
+          />
+        )}
       </div>
     </Fade>
   );

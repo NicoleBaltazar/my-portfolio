@@ -3,6 +3,9 @@ import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
+// import meCoding from "../../assets/images/me-intro.png";
+import meCoding from "../../assets/images/coding.svg";
+import catComputer from "../../assets/lottie/catComputer";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
@@ -40,7 +43,7 @@ export default function Greeting() {
               <SocialMedia />
               <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
-                {greeting.resumeLink && (
+                {/* {greeting.resumeLink && (
                   <a
                     href={require("./resume.pdf")}
                     download="Resume.pdf"
@@ -48,19 +51,26 @@ export default function Greeting() {
                   >
                     <Button text="Download my resume" />
                   </a>
-                )}
+                )} */}
               </div>
             </div>
           </div>
           <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
+            {/* {illustration.animated ? (
+              <DisplayLottie animationData={catComputer} />
+              // <DisplayLottie animationData={meCoding} />
             ) : (
               <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
+                alt="Nicole Coding"
+                 src={meCoding}
+                // src={require("../../assets/images/manOnTable.svg")}
               ></img>
-            )}
+            )} */}
+            <img
+              alt="Nicole Coding"
+              src={meCoding}
+              // src={require("../../assets/images/manOnTable.svg")}
+            ></img>
           </div>
         </div>
       </div>

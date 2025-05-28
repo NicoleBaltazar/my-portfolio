@@ -1,0 +1,239 @@
+// // src/containers/StartupProjects/ProjectModal.scss
+// .modal-overlay {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.75);
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   z-index: 1000;
+// }
+
+// // .modal-container {
+// //   background-color: #fff;
+// //   color: #000;
+// //   max-width: 90vw;
+// //   max-height: 90vh;
+// //   width: 1000px;
+// //   padding: 2rem;
+// //   border-radius: 10px;
+// //   overflow-y: auto;
+// //   position: relative;
+// // }
+
+// .dark-mode {
+//   background-color: #1e1e1e;
+//   color: #f5f5f5;
+// }
+
+// .close-button {
+//   position: absolute;
+//   top: 1rem;
+//   right: 1.5rem;
+//   font-size: 2rem;
+//   background: none;
+//   border: none;
+//   cursor: pointer;
+//   color: #999;
+// }
+
+// .modal-grid {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   gap: 2rem;
+// }
+
+// .modal-container {
+//   background-color: #fff;
+//   color: #000;
+//   max-width: 95vw;
+//   max-height: 90vh;
+//   width: 1000px;
+//   padding: 2rem;
+//   border-radius: 10px;
+//   overflow-y: auto;
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 2rem;
+// }
+
+// .modal-carousel {
+//   width: 100%;
+//   height: auto;
+// }
+
+// .modal-img {
+//   width: 100%;
+//   max-height: 400px;
+//   object-fit: contain;
+//   border-radius: 8px;
+// }
+
+// .modal-details {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+// }
+
+// // .modal-carousel {
+// //   overflow: hidden;
+// //   width: 100%;
+// //   height: 100%;
+// // }
+
+// // .modal-img {
+// //   width: 100%;
+// //   height: auto;
+// //   border-radius: 8px;
+// // }
+
+// // .modal-details {
+// //   display: flex;
+// //   flex-direction: column;
+// //   justify-content: space-between;
+// // }
+
+// .modal-info-list {
+//   list-style: none;
+//   padding: 0;
+//   margin-top: 1rem;
+// }
+
+// .modal-info-list li {
+//   margin-bottom: 0.5rem;
+// }
+
+// .modal-container {
+//   background-color: #fff;
+//   color: #000;
+//   max-width: 90vw;
+//   max-height: 90vh;
+//   width: 1000px;
+//   padding: 2rem;
+//   border-radius: 10px;
+//   overflow-y: auto;
+//   position: relative;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 2rem;
+// }
+
+// .modal-carousel {
+//   width: 100%;
+//   height: auto;
+// }
+
+// .modal-img {
+//   width: 100%;
+//   max-height: 400px;
+//   object-fit: contain;
+//   border-radius: 8px;
+// }
+
+// .modal-details {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+// }
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  // width: 100vw;
+  // height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  // overflow: hidden; // prevent background scroll
+}
+
+.modal-container {
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+  max-width: 1200px; // wider modal
+  max-height: 90vh;
+  padding: 2rem;
+  border-radius: 12px;
+  overflow-y: auto;
+  overflow-x: hidden; // prevent horizontal scroll
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #999;
+  z-index: 1;
+}
+
+.modal-carousel {
+  width: 100%;
+  height: auto;
+}
+
+.modal-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.modal-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-size: 1rem;
+  overflow-x: hidden; // no horizontal scroll inside
+  word-wrap: break-word;
+}
+
+.modal-info-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.modal-info-list li {
+  margin-bottom: 0.5rem;
+}
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+}
+
+.dark-mode .modal-container {
+  background-color: #2c2c2c;
+  color: #f5f5f5;
+}
+
+.dark-mode .close-button {
+  color: #ccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .modal-container {
+    max-width: 95vw;
+    padding: 1rem;
+  }
+}
