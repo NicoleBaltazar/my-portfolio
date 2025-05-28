@@ -22,7 +22,7 @@ const illustration = {
 const greeting = {
   username: "Nicole",
   title: "Hi, I'm Nicole",
-  picture: require("./assets/images/profile.jpg"),
+  picture: require("./assets/images/me.png"),
 
   // subTitle: emoji(
   //   "Passionate and results-driven Front-End Software Engineer with strong foundations in both front-end and back-end development. Committed to building scalable, user-centric applications and continuously learning emerging technologies to advance towards a Full-Stack Developer role. Eager to contribute to dynamic teams driving innovation and digital transformation."
