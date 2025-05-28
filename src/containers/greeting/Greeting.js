@@ -105,7 +105,7 @@ export default function Greeting() {
             ></img> */}
             <img
               // src={profileImg}
-              src="/profile.jpg"
+              src="/images/profile.jpg"
               alt="Nicole Profile"
               className="profile-pic"
             />
