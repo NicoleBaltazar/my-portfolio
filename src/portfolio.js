@@ -20,7 +20,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Nicole Baltazar",
+  username: "Nicole",
   title: "Hi, I'm Nicole",
   // subTitle: emoji(
   //   "Passionate and results-driven Front-End Software Engineer with strong foundations in both front-end and back-end development. Committed to building scalable, user-centric applications and continuously learning emerging technologies to advance towards a Full-Stack Developer role. Eager to contribute to dynamic teams driving innovation and digital transformation."
@@ -387,7 +387,7 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "Achievements, Certifications, and Some Cool Stuff that I have done !",
 
   achievementsCards: [
     {

@@ -1,10 +1,12 @@
-import React, {useContext} from "react";
+import React, {useContext, useState, useEffect} from "react";
+
 import {Fade} from "react-reveal";
 import emoji from "react-easy-emoji";
 import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 // import meCoding from "../../assets/images/me-intro.png";
 import meCoding from "../../assets/images/coding.svg";
+import profileImg from "../../assets/images/profile.jpg";
 import catComputer from "../../assets/lottie/catComputer";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
@@ -14,9 +16,20 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
+  const [showProfile, setShowProfile] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowProfile(true);
+    }, 1800); // matches wave animation
+
+    return () => clearTimeout(timer);
+  }, []);
+
   if (!greeting.displayGreeting) {
     return null;
   }
+
   return (
     <Fade bottom duration={1000} distance="40px">
       <div className="greet-main" id="greeting">
@@ -30,6 +43,24 @@ export default function Greeting() {
                 {greeting.title}{" "}
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
+              {/* ==================================================== */}
+              {/* <h1
+                className={isDark ? "dark-mode greeting-text" : "greeting-text"}
+              >
+                {greeting.title}{" "}
+                {showProfile ? (
+                  <span className="profile-container ">
+                    <img
+                      src={profileImg}
+                      alt="Nicole Profile"
+                      className="profile-pic"
+                    />
+                  </span>
+                ) : (
+                  <span className="wave-emoji">{emoji("👋")}</span>
+                )}
+              </h1> */}
+
               <p
                 className={
                   isDark
@@ -56,6 +87,7 @@ export default function Greeting() {
             </div>
           </div>
           <div className="greeting-image-div">
+            {/* <div className="profile-container"> */}
             {/* {illustration.animated ? (
               <DisplayLottie animationData={catComputer} />
               // <DisplayLottie animationData={meCoding} />
@@ -66,11 +98,16 @@ export default function Greeting() {
                 // src={require("../../assets/images/manOnTable.svg")}
               ></img>
             )} */}
-            <img
+            {/* <img
               alt="Nicole Coding"
               src={meCoding}
               // src={require("../../assets/images/manOnTable.svg")}
-            ></img>
+            ></img> */}
+            <img
+              src={profileImg}
+              alt="Nicole Profile"
+              className="profile-pic"
+            />
           </div>
         </div>
       </div>
