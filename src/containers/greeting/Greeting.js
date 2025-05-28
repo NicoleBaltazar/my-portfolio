@@ -98,17 +98,17 @@ export default function Greeting() {
                 // src={require("../../assets/images/manOnTable.svg")}
               ></img>
             )} */}
-            {/* <img
+            <img
               alt="Nicole Coding"
               src={meCoding}
               // src={require("../../assets/images/manOnTable.svg")}
-            ></img> */}
-            <img
+            ></img>
+            {/* <img
               // src={profileImg}
               src="/images/profile.jpg"
               alt="Nicole Profile"
               className="profile-pic"
-            />
+            /> */}
           </div>
         </div>
       </div>
