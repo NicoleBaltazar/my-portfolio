@@ -6,7 +6,7 @@ import "./Greeting.scss";
 import landingPerson from "../../assets/lottie/landingPerson";
 // import meCoding from "../../assets/images/me-intro.png";
 import meCoding from "../../assets/images/coding.svg";
-import profileImg from "../../assets/images/profile.jpg";
+// import profileImg from "../../assets/images/profile.jpg";
 import catComputer from "../../assets/lottie/catComputer";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
@@ -104,7 +104,8 @@ export default function Greeting() {
               // src={require("../../assets/images/manOnTable.svg")}
             ></img> */}
             <img
-              src={profileImg}
+              // src={profileImg}
+              src="/profile.jpg"
               alt="Nicole Profile"
               className="profile-pic"
             />
