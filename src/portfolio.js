@@ -252,7 +252,7 @@ const bigProjects = {
     {
       projectName: "BIR ARMS",
       projectDesc:
-        "Responsible for building the user interface using Vue.js. Oversees pull request management for the front-end team and coordinates deployments to both the test and UAT environments.",
+        "Contributed to building the user interface using Vue.js. Oversaw pull request management for the front-end team and coordinated deployments to both the test and UAT environments.",
       type: "Website",
       role: "Front End Developer",
       languages: "Vue.js, Tailwind, JavaScript",
@@ -280,7 +280,7 @@ const bigProjects = {
     {
       projectName: "Makaturismo",
       projectDesc:
-        "Responsible for building the front-end interface using Vue.js, Pinia, and Tailwind CSS. Handled debugging and issue resolution to ensure a smooth and responsive user experience.",
+        "Contributed to building the front-end interface using Vue.js, Pinia, and Tailwind CSS. Handled debugging and issue resolution to ensure a smooth and responsive user experience.",
       type: "Website",
       role: "Front End Developer",
       languages: "Vuejs, Tailwind, JavaScript",
@@ -316,7 +316,7 @@ const bigProjects = {
     {
       projectName: "Love Laguna",
       projectDesc:
-        "Developed the front-end of the tourism web portal using Vue.js, Pinia, and Tailwind CSS. Contributed to resolving UI issues and ensuring an engaging and functional experience for site visitors.",
+        "Worked with the FE team to build the user interface using Vue.js, Pinia, and Tailwind CSS. Contributed to resolving UI issues and ensuring an engaging and functional experience for site visitors.",
       type: "Website",
       role: "Front End Developer",
       languages: "Vuejs, Tailwind, JavaScript",
