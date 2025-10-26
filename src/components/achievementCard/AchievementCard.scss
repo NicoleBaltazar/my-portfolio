@@ -3,24 +3,26 @@
 .card-image {
   max-width: 100%;
   height: auto;
-  width: 250px;
+  width: 150px;
 }
 .card-title {
   color: $titleColor;
-  font-size: 1.375rem;
+  // font-size: 1.375rem;
+  font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   margin: 15px 0 0 0;
 }
 .card-subtitle {
   color: $cardSubtitle;
-  font-size: 1.063rem;
+  // font-size: 1.063rem;
+  font-size: 13px;
   line-height: 1.5rem;
 }
 .certificate-card {
   background-color: $lightBackground2;
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 10px;
   border: 1px solid $lightBorder1;
   -webkit-transition: all 0.3s ease;

@@ -1,22 +1,42 @@
 @import "../../_globalColor";
 
-.card-image {
-  max-width: 100%;
-  height: auto;
-  width: 250px;
+.skills-heading {
+  font-size: 40px;
+  font-weight: 700;
 }
-.card-title {
+.project-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.project-image {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image .card-image {
+  height: auto;
+  width: 130px;
+}
+
+.project-detail .card-title {
   color: $titleColor;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 24px;
   font-weight: 700;
   margin: 15px 0 0 0;
 }
-.card-subtitle {
+.project-detail .card-subtitle {
   color: $cardSubtitle;
-  font-size: 17px;
+  font-size: 13px;
   line-height: 1.5rem;
 }
+
 .project-card {
   display: flex;
   flex-direction: column;
@@ -27,10 +47,16 @@
   justify-content: center;
 }
 .project-card-light {
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
+  background-color: #ffffff;
+  border: 3px solid rgba(0, 0, 0, 0.3); /* subtle border for visibility */
+  box-shadow: 0 4px 12px rgba(146, 21, 192, 0.08); /* lighter, more natural shadow */
+  border-radius: 12px;
   transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+  }
 }
 
 .project-card-dark {
@@ -41,7 +67,7 @@
 }
 
 .project-detail {
-  text-align: center;
+  text-align: left;
 }
 .project-card-light:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
@@ -49,19 +75,12 @@
 .project-card-dark:hover {
   box-shadow: 0px 20px 30px -10px $darkBoxShadow;
 }
-.project-image {
-  position: relative;
-  height: 250px;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .projects-container {
+  // border: solid 3px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem 1rem;
+  gap: 3rem;
 }
 
 .project-card-footer span.project-tag {

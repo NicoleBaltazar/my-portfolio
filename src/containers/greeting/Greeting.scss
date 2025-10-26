@@ -10,8 +10,9 @@
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
-  margin-bottom: 30px;
+  // margin-top: 2rem;
+  margin-bottom: 0px;
+  // background: linear-gradient(135deg, #0f1123, #1b1440);
 }
 
 .greeting-main {
@@ -28,35 +29,56 @@
 
 .greeting-main > * {
   flex: 1;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
+
+.greeting-text-div {
+  display: flex;
+  // flex-direction: column;
+  align-items: center; /* centers horizontally */
+  justify-content: center; /* centers vertically */
+  text-align: center; /* centers the text content */
+  min-height: 90vh; /* full viewport height */
+}
+.profile-pic {
+  width: clamp(180px, 25vw, 180px);
+  height: clamp(170px, 25vw, 170px);
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white; // optional
+}
+
+.greeting-text {
+  font-size: 50px;
+  line-height: 1;
+  color: $textColor !important;
+}
+
+.greeting-text-p {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+.greeting-buttons-div {
+  display: flex;
+  // margin-top: 40px;
+  justify-content: center;
+}
+
+//=================================================================
+
+// .greeting-image-div > img {
+//   max-width: 10%;
+//   max-height: 10%;
+//   // height: auto;
+// }
 
 .empty-div {
   margin-bottom: 40px;
 }
 
-.button-greeting-div {
-  display: flex;
-  margin-top: 40px;
-}
 .download-link-button {
   text-decoration: none;
-}
-
-.greeting-text {
-  font-size: 70px;
-  line-height: 1.1;
-  color: $textColor !important;
-}
-
-.greeting-text-p {
-  font-size: 30px;
-  line-height: 40px;
-}
-
-.greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
 }
 
 .wave-emoji {
@@ -108,9 +130,9 @@
   }
 }
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
+  // .button-greeting-div {
+  //   justify-content: space-around;
+  // }
   .greeting-text {
     font-size: 30px;
     text-align: center;
@@ -137,16 +159,6 @@
 .profile-container {
   display: inline-block;
   animation: fadeScaleIn 0.5s ease-in-out;
-}
-
-.profile-pic {
-  // width: 60px;
-  // height: 60px;
-  // width: 40vw;
-  // height: auto;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 3px solid $buttonColor; // optional
 }
 
 @keyframes fadeScaleIn {

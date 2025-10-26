@@ -28,7 +28,8 @@ const greeting = {
   //   "Passionate and results-driven Front-End Software Engineer with strong foundations in both front-end and back-end development. Committed to building scalable, user-centric applications and continuously learning emerging technologies to advance towards a Full-Stack Developer role. Eager to contribute to dynamic teams driving innovation and digital transformation."
   // ),
   subTitle: emoji(
-    "I'm a Front-End Software Engineer with a passion for clean design, efficient code, and continuous learning. I enjoy building intuitive digital experiences and working on meaningful projects. I'm currently expanding my skill set to grow into a more well-rounded full-stack developer capable of contributing across the entire development process."
+    " I build clean, responsive, and user-centered web applications using moderntechnologies like <b>React</b> and <b>Vue</b>. Currently expanding my skills toward full-stack development"
+    // "I'm a Front-End Software Engineer with a passion for clean design, efficient code, and continuous learning. I enjoy building intuitive digital experiences and working on meaningful projects. I'm currently expanding my skill set to grow into a more well-rounded full-stack developer capable of contributing across the entire development process."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -43,6 +44,7 @@ const socialMediaLinks = {
   gmail: "nicole.baltazar2000@gmail.com",
   // gitlab: "https://gitlab.com/saadpasta",
   facebook: "https://www.facebook.com/nicolebaltazar2000",
+  instagram: "https://www.facebook.com/nicolebaltazar2000",
   // medium: "https://medium.com/@saadpasta",
   // stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -127,11 +129,11 @@ https://fontawesome.com/icons?d=gallery */
     {skillName: "JavaScript", iconifyIcon: "famicons:logo-javascript"},
     {skillName: "Vue", iconifyIcon: "fa-brands:vuejs"},
     {skillName: "Tailwind", iconifyIcon: "simple-icons:tailwindcss"},
-    // {skillName: "React", iconifyIcon: "fa-brands:react"},
+    {skillName: "React", iconifyIcon: "fa-brands:react"},
 
     {skillName: "Node.js", iconifyIcon: "fa-brands:node-js"},
     // {skillName: "NPM", iconifyIcon: "fa-brands:npm"},
-    // {skillName: "Python", iconifyIcon: "fa-brands:python"},
+    {skillName: "Python", iconifyIcon: "fa-brands:python"},
     {skillName: "Django", iconifyIcon: "simple-icons:django"},
     {skillName: "Laravel", iconifyIcon: "fa-brands:laravel"},
     {skillName: "MongoDB", iconifyIcon: "simple-icons:mongodb"},
@@ -469,7 +471,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -488,7 +490,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: false // Set false to hide this section, defaults to true
+  display: true // Set false to hide this section, defaults to true
 };
 
 // Podcast Section

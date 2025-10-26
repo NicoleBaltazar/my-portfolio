@@ -32,7 +32,7 @@
 
 .education-text-school {
   margin: 0;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -56,7 +56,7 @@
 .education-text-subHeader {
   color: $textColor;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 16px;
   margin: 0px;
   padding-top: 0.8rem;
   line-height: normal;
@@ -64,18 +64,20 @@
 
 .education-text-duration {
   color: $titleColor;
-  font-size: 19px;
+  font-size: 16px;
   margin: 0px;
   padding-top: 0.5rem;
 }
 
 .education-text-desc {
+  font-size: 16px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
 .education-text-bullets > ul {
   margin-top: 0.5rem;
+  font-size: 16px;
 }
 
 /* Media Query */
@@ -103,8 +105,8 @@
     font-size: 16px;
   }
   .education-roundedimg {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     margin-bottom: 0.5rem;
     margin-right: 0px;
   }
