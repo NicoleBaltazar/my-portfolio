@@ -22,6 +22,15 @@
 .subTitle {
   color: $subTitle !important;
 }
+.greeting-text-p .highlight-react {
+  font-weight: 700;
+  color: #61dafb; /* React blue */
+}
+
+.greeting-text-p .highlight-vue {
+  font-weight: 700;
+  color: #42b883; /* Vue green */
+}
 
 .greeting-main {
   display: flex;

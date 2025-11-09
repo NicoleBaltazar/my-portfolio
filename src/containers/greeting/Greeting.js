@@ -45,7 +45,7 @@ export default function Greeting() {
                 <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
 
-              <p
+              {/* <p
                 className={
                   isDark
                     ? "dark-mode greeting-text-p"
@@ -53,7 +53,15 @@ export default function Greeting() {
                 }
               >
                 {greeting.subTitle}
-              </p>
+              </p> */}
+              <p
+                className={
+                  isDark
+                    ? "dark-mode greeting-text-p"
+                    : "greeting-text-p subTitle"
+                }
+                dangerouslySetInnerHTML={{__html: greeting.subTitle}}
+              ></p>
               {/* <div id="resume" className="empty-div"></div> */}
               <SocialMedia />
 
