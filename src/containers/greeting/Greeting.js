@@ -9,19 +9,19 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function Greeting() {
   const {isDark} = useContext(StyleContext);
-  const [showProfile, setShowProfile] = useState(false);
+  // const [showProfile, setShowProfile] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowProfile(true);
-    }, 1800); // matches wave animation
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setShowProfile(true);
+  //   }, 1800); // matches wave animation
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
-  if (!greeting.displayGreeting) {
-    return null;
-  }
+  // if (!greeting.displayGreeting) {
+  //   return null;
+  // }
 
   return (
     <Fade bottom duration={1000} distance="40px">
