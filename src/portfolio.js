@@ -27,9 +27,9 @@ const greeting = {
   // subTitle: emoji(
   //   "Passionate and results-driven Front-End Software Engineer with strong foundations in both front-end and back-end development. Committed to building scalable, user-centric applications and continuously learning emerging technologies to advance towards a Full-Stack Developer role. Eager to contribute to dynamic teams driving innovation and digital transformation."
   // ),
-  subTitle: `I build clean, responsive, and user-centered web applications using modern technologies like 
-    <span class="highlight-react">React</span> and <span class="highlight-vue">Vue</span>. 
-    Currently expanding my skills toward full-stack development.`,
+  // subTitle: `I build clean, responsive, and user-centered web applications using modern technologies like
+  //   <span class="highlight-react">React</span> and <span class="highlight-vue">Vue</span>.
+  //   Currently expanding my skills toward full-stack development.`,
   subTitle: emoji(
     " I build clean, responsive, and user-centered web applications using moderntechnologies like  <span>React</span> and <span>Vue</span>. Currently expanding my skills toward full-stack development"
     // "I'm a Front-End Software Engineer with a passion for clean design, efficient code, and continuous learning. I enjoy building intuitive digital experiences and working on meaningful projects. I'm currently expanding my skill set to grow into a more well-rounded full-stack developer capable of contributing across the entire development process."
