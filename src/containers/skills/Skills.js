@@ -1,14 +1,9 @@
 import React, {useContext} from "react";
 import "./Skills.scss";
-import meSolving from "../../assets/images/me-solving.png";
-// import meSolving from "../../assets/images/solving.svg";
 
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import {illustration, skillsSection} from "../../portfolio";
+import {skillsSection} from "../../portfolio";
 import {Fade} from "react-reveal";
-import codingPerson from "../../assets/lottie/codingPerson";
-import meCoding from "../../assets/lottie/girl-coding.json";
-import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function Skills() {

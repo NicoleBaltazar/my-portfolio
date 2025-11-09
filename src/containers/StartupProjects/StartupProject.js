@@ -3,7 +3,7 @@ import "./StartupProjects.scss";
 import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
-import {useNavigate} from "react-router-dom"; // import useNavigate
+// import {useNavigate} from "react-router-dom"; // import useNavigate
 import ProjectModal from "./ProjectModal";
 
 // inside your component:
